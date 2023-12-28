@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>GAU NEWS</h1>
+            <img src="/images/logo.png" alt="Header Image">
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <!-- <li class="language-btn"><button onclick="changeLanguage()">ქართული</button></li> -->
+            <li id="google_translate_element"></li>
+            <li><a href="login.html"> ADMIN LOGIN</a></li>
+        </ul>
+    </nav>
+
+    <main id="content">
+        <form id="signup-form">
+            <h2 id="signup-header" style="color: #1451a4;">Sign Up</h2>
+        
+            <label>Email*:</label>
+            <input type="email" id="email" required>
+        
+            <label>Password*:</label>
+            <input type="password" id="password" required>
+
+            <span id="password-strength-indicator-container"></span>
+        
+            <label>Confirm Password*:</label>
+            <input type="password" id="confirm-password" required>
+        
+            <label>First Name*:</label>
+            <input type="text" id="first-name" required>
+        
+            <label>Last Name*:</label>
+            <input type="text" id="last-name" required>
+        
+            <label>Country*:</label>
+            <input type="text" id="country" required>
+        
+            <label>City*:</label>
+            <input type="text" id="city" required>
+        
+            <label>Phone Number*:</label>
+            <input type="tel" id="phone-number" required>
+        
+            <button type="submit" onclick="submitForm()">SIGN UP</button>
+        </form>
+    </main>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+</body>
+</html>

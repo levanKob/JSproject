@@ -1,0 +1,362 @@
+* {box-sizing:border-box}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(to right, #1451a4, white);
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.header-content {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.5em;
+
+}
+
+header img {
+    max-height: 100px;
+}
+
+nav {
+    background-color: #1451a4;
+    color: white;
+    padding: 0.5em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 10px solid white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#content {
+    margin: 2em;
+}
+
+#main-info, #contact-us {
+    margin-bottom: 2em;
+}
+
+/* .language-btn {
+    margin-left: auto;
+}
+
+.language-btn button {
+    background-color: white;
+    color: #1451a4;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;  
+}
+
+.language-btn button:hover {
+    background-color: rgb(173, 173, 173);
+} */
+
+#google_translate_element{
+    margin-left: auto;
+    background-color: white;
+    color: #1451a4;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;   
+}
+
+#signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#signup-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+#signup-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+#signup-form input, #login-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#signup-form button, #login-form button {
+    background-color: #1451a4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#signup-form button:hover, #login-form button:hover {
+    background-color: #0056b3;
+}
+
+#signup-header{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#login-header {
+    text-align: center;
+    font-size: 24px;
+    color: #1451a4;
+    margin-bottom: 20px;
+}
+
+#login-form > label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+#login-form > input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login-form > button {
+    background-color: #1451a4;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+#login-form > button:hover {
+    background-color: #0056b3;
+}
+
+#contact {
+    background-color: #1451a4;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact p {
+    color: white;
+}
+
+#contact h3 {
+    color: white;
+    margin-top: 15px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin-bottom: 8px;
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#container{
+    display: flex;
+    width: auto;
+    margin: 10px;
+    margin-top: 100px;
+    background-color: #1451a4;
+    height: 800px;
+    padding: 20px;
+}
+
+#container-header{
+    text-align: center;
+    color: white;
+}
+
+.left-panel {
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.slider-item {
+    display: none;
+    text-align: center;
+}
+
+.slider-item img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-item.active {
+    display: block;
+}
+
+.slider-btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.slider-btns button {
+    background-color: white;
+    color: #1451a4;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.slider-btns button:hover {
+    background-color: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header img {
+        max-height: 50px;
+    }
+
+    nav li {
+        font-size: 0.5em;
+    }
+
+    .slider {
+        max-width: 100%;
+    }
+
+    .slider-item img {
+        width: 100%;
+    }
+
+    .slider-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider-btns button {
+        margin-top: 10px;
+    }
+
+    #contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-panel {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header img {
+        max-height: 80px;
+    }
+    .left-panel {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAU News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content" id="home">
+            <h1 data-translate="1">WELCOME TO GAU NEWS</h1>
+            <img src="/images/logo.png" alt="Header Image">
+        </div>
+    </header>
+        <nav>
+            <ul>
+                <li data-translate="2"><a href="#home">HOME</a></li>
+                <li data-translate="3"><a href="#contact">CONTACT US</a></li>
+                <li data-translate="4"><a href="signup.html">SIGN UP FOR THE NEWSLETTER</a></li>
+                <!-- <li class="language-btn"><button onclick="changeLanguage()">ქართული</button></li> -->
+                <li id="google_translate_element"></li>
+                <li data-translate="5"><a href="login.html">ADMIN LOGIN</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id='container'>
+
+                <div class="left-panel">
+                    <h1 id='container-header' data-translate="6">NEWS & EVENTS</h1>
+                    <p data-translate="7">Welcome to our News & Events page, where you can stay updated on the latest happenings and upcoming activities.</p>
+                    <h2 data-translate="8">Recent News</h2>
+                    <ul>
+                        <li data-translate="9">1000th newsletter subscriber!</li>
+                        <li data-translate="10">The semester is ending soon</li>
+                        <li data-translate="11">Complete redesign of this site</li>
+                    </ul>
+                    <h2 data-translate="12">Upcoming Events</h2>
+                    <ul>
+                        <li data-translate="13">Final exams coming up, get ready! - January 21, 2024</li>
+                        <li data-translate="14">Merry Christmas! - December 25, 2023</li>
+                        <li data-translate="15">End-of-semester Javascript projects - December 29, 2023</li>
+                    </ul>
+                    <p data-translate="16">Stay tuned for more updates and mark your calendars for these exciting events!</p>
+                </div>
+
+                <div class="slider">
+                    <div class="slider-item active">
+                        <img src="/images/carousel1.jpg" alt="Slider-1">
+                    </div>
+                    <div class="slider-item">
+                        <img src="/images/carousel2.jpg" alt="Slider-2">
+                    </div>
+                    <div class="slider-item">
+                        <img src="/images/carousel3.jpg" alt="Slider-3">
+                    </div>
+                    <div class="slider-btns">
+                        <button data-translate="17" id="btn-prev" onclick="PrevSlide()">Previous</button>
+                        <button data-translate="18" id="btn-next" onclick="NextSlide()">Next</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="contact">
+            <div>
+                <h2 data-translate="19">Contact Us</h2>
+                <p data-translate="20">If you have any questions or concerns, feel free to reach out to us. We're here to help!</p>
+            </div>
+            <div>
+                <h3 data-translate="21">Email</h3>
+                <p data-translate="22">Email: info@gaunews.com</p>
+            </div>
+            <div>
+                <h3 data-translate="23">Phone</h3>
+                <p data-translate="24">Phone: (+995 32) 220 65 20</p>
+            </div>
+            <div>
+                <h3 data-translate="25">Address</h3>
+                <p data-translate="26">10 Merab Aleksidze Str., 0160, Tbilisi, Georgia</p>
+            </div>
+            <div>
+                <h3 data-translate="27">Social Media</h3>
+                <p data-translate="28">Connect with us on social media:</p>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+</body>
+</html>
